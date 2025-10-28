@@ -10,6 +10,7 @@ import TeamDetail from "./elements/TeamDetail";
 import { useState } from "react";
 import Popup from "../Popup/Popup";
 import StatusDetail from "../Status/StatusDetail";
+import Pagination from "../Pagination/Pagination";
 
 const Table = () => {
   const [checkAll, setCheckAll] = useState(false);
@@ -115,6 +116,8 @@ const Table = () => {
           ))}
         </tbody>
       </table>
+
+      <Pagination />
     </div>
   );
 };
