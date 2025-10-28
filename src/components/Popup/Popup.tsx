@@ -14,7 +14,6 @@ const Popup: React.FC<PopupProps> = ({ trigger, children }) => {
 
   const togglePopup = () => setIsOpen((prev) => !prev);
 
-  // Close when clicking outside or scrolling
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (
@@ -37,7 +36,6 @@ const Popup: React.FC<PopupProps> = ({ trigger, children }) => {
     };
   }, []);
 
-  // Adjust popup position (top/bottom)
   useEffect(() => {
     if (isOpen && triggerRef.current && popupRef.current) {
       const triggerRect = triggerRef.current.getBoundingClientRect();
@@ -52,7 +50,6 @@ const Popup: React.FC<PopupProps> = ({ trigger, children }) => {
     }
   }, [isOpen]);
 
-  // Calculate popup position
   const popupStyles: React.CSSProperties = (() => {
     if (!triggerRef.current || !popupRef.current) return {};
 

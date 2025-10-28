@@ -4,13 +4,11 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const Pagination = () => {
   return (
     <div className="pagination">
-      {/* Previous button */}
       <button className="pagination-btn">
         <ArrowLeft size={16} />
         <span>Previous</span>
       </button>
 
-      {/* Page numbers */}
       <div className="pagination-pages">
         <span className="page active">1</span>
         <span className="page">2</span>
@@ -21,7 +19,6 @@ const Pagination = () => {
         <span className="page">10</span>
       </div>
 
-      {/* Next button */}
       <button className="pagination-btn">
         <span>Next</span>
         <ArrowRight size={16} />

@@ -12,4 +12,3 @@ npm install
 3️⃣ **Start the React app**
 
 npm run dev
-OR use 'npm start' if configured with Create React App
