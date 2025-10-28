@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  @include flex-center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+
+  span{
+    text-align: center;
+  }
+}

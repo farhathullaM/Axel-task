@@ -1,0 +1,28 @@
+.search {
+  display: flex;
+  align-items: center;
+  border : 2px solid rgb(236, 234, 234);
+  width: 350px;
+  border-radius: 8px;
+  padding-block: 5px;
+  padding-inline: 6px;
+
+  input {
+    outline: none;
+    border: none;
+    padding-block: 5px;
+    
+
+    &::placeholder {
+      color: rgb(188, 183, 183);
+      font-weight: 500;
+      font-size: 14px;
+      text-align: start;
+    }
+  }
+}
+
+.search-icon{
+    color: rgb(142, 131, 131);
+    width: 16px;
+}

@@ -1,0 +1,36 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 100px;
+  padding-inline: 20px;
+  border-bottom: 2px solid rgb(236, 234, 234);
+
+  h2{
+    font-weight: 500;
+    font-size: x-large;
+    color: rgb(54, 54, 54);
+  }
+}
+
+.iconsvg {
+  width: 18px;
+  height: 18px;
+}
+
+.whatsapp{
+  width: 25px;
+  height: 25px;
+}
+
+.icons {
+  @include flex-center;
+  gap: 18px;
+}

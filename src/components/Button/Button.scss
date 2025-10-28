@@ -1,0 +1,26 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button {
+  @include flex-center;
+  width: fit-content;
+  border-radius: 8px;
+  border: 2px solid rgb(236, 234, 234);
+  padding-block: 5px;
+  width: 80px;
+  gap: 4px;
+
+  span{
+    font-size: 13px;
+    font-weight: 400;
+     color: rgb(142, 131, 131);
+  }
+}
+
+.action-button-icon {
+  color: rgb(142, 131, 131);
+  width: 14px;
+}

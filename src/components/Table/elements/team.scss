@@ -1,0 +1,27 @@
+.teamstyle {
+  display: flex;
+  text-align: center;
+  border-radius: 15px;
+  padding-block: 3px;
+  padding-inline: 10px;
+  gap: 4px;
+  font-size: smaller;
+}
+
+.marketing {
+  background: #f4def4;
+  color: #c044c0;
+  border: 1px solid #e59de5;
+}
+
+.product {
+  background: #d8f4fc;
+  color: #0f98ba;
+  border: 1px solid #5faec2;
+}
+
+.design {
+  background: #edebf5;
+  color: #6871eb;
+  border: 1px solid #5250d0;
+}
